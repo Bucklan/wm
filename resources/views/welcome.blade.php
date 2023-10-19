@@ -17,6 +17,11 @@
         rel="stylesheet"/>
 </head>
 <body>
-<livewire:clicker/>
+<div id="app">
+    <front-page></front-page>
+</div>
+
+
+<script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>
