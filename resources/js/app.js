@@ -1,9 +1,9 @@
 import './bootstrap';
 
-window.Vue = require('vue');
 
-Vue.component('front-page', require('./component/Front.vue').default);
+import { createApp } from 'vue'
+import PostsIndex from './components/Posts/Index.vue'
 
-const app = new Vue({
-    el: '#app',
-})
+createApp({})
+    .component('PostsIndex', PostsIndex)
+    .mount('#app')
